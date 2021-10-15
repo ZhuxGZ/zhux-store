@@ -53,6 +53,16 @@ nav li {
   text-align: center;
 }
 
+.home {
+  text-decoration: none;
+  color: #111111;
+}
+
+.contact {
+  text-decoration: none;
+  color: #111111;
+}
+
 .last-works {
   height: 3em;
   width: 95%;
@@ -63,13 +73,10 @@ nav li {
   text-align: center;
   margin-top: 3em;
   margin-bottom: 2em;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 
 .last-works h2 {
-  margin: 0px;
+  margin: 3px;
 }
 
 .tittle {
@@ -83,24 +90,77 @@ nav li {
 
 .work {
   margin-top: 1em;
-  background-color: aliceblue;
-  width: 250px;
+  width: 48%;
   height: 200px;
   border-radius: 40px;
   margin-left: 0.75em;
+  margin-right: 0.75em;
   display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+#w2 {
+  background-color: #111111;
+}
+
+#w1 img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 199px;
+  border-radius: 37px;
+  border: white 2px solid;
+}
+
+#w2 img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 199px;
+  border-radius: 37px;
+  border: white 2px solid;
+}
+.portada {
+  width: 100.5%;
+  height: 200.5px;
+  position: absolute;
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: rgba(240, 248, 255, 0.26);
+  border-radius: 37px;
+  line-height: 150px;
+}
+
+#w1 h3 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 3;
   box-sizing: border-box;
 }
 
-.portada {
-  max-width: 200px;
-  max-height: 200px;
-  display: inline-block;
+#w2 h3 {
+  font-size: 24px;
+  color: white;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
 }
 
-.portada h3 {
-  margin-top: 85%;
-  width: 190px;
-  max-width: 185px;
-  text-align: center;
+@media (max-width: 755px) {
+  .works {
+    box-sizing: border-box;
+    padding-right: 2.5em;
+    padding-left: 1em;
+  }
+  .work {
+    width: 100%;
+  }
+
+  .banner-info {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
 }
